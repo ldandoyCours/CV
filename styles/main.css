@@ -1,0 +1,289 @@
+/* CSS  reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS body */
+body {
+    background-color: #4B584F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #e5e5e5;
+}
+
+
+/* CSS header */
+header {
+    background-image: url('../img/banniere.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+header .content {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #e5e5e5;
+}
+
+header .content h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header .content .info {
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+/* CSS main */
+main {
+    display: flex;
+}
+
+/* CSS aside */
+main aside {
+    background-color: #d5d5d5;
+    padding: 40px;
+}
+
+main aside .profile {
+    width: 50%;
+    margin: 40px auto;
+}
+
+main aside .profile img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+main aside ul {
+    margin-bottom: 40px;
+    list-style-type: none;
+}
+
+main aside li {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 5px;
+}
+
+main aside .ref {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+main aside a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+/* main section */
+main .content {
+    padding: 40px;
+}
+
+main .content section {
+    margin-bottom: 40px;
+}
+
+main .content h2 {
+    border-bottom: 2px solid #959595;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+main .content section .info {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+/* CSS bloc */
+.bloc {
+    display: flex;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.bloc .year {
+    background-color: #012b18;
+    color: #d5d5d5;
+    text-align: center;
+    padding: 5px;
+    margin-right: 30px;
+}
+
+.bloc .info .title {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.bloc .info .plus {
+    font-size: .9rem;
+}
+
+.bloc .info .description {
+    font-size: .7rem;
+}
+
+/* loader */
+.loader {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.loader.loader-25 {
+    border-left-color: #012b18;
+}
+
+.loader.loader-50 {
+    border-left-color: #012b18;
+    border-top-color: #012b18;
+}
+
+.loader.loader-75 {
+    border-left-color: #012b18;
+    border-top-color: #012b18;
+    border-bottom-color: #012b18;
+}
+
+.loader.loader-100 {
+    border-color: #012b18;
+}
+
+
+/* CSS generique */
+.bold {
+    font-weight: bold;
+}
+
+.enligne {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CSS footer */
+footer {
+    background-image: url('../img/banniere.jpg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+footer .content {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #e5e5e5;
+}
+
+@media(max-width: 650px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main aside {
+        padding: 0 10px;
+    }
+
+    main aside li {
+        flex-direction: column;
+    }
+
+    main .aside .ref {
+        font-size: .75rem;
+    }
+
+    .enligne {
+        flex-direction: column;
+    }
+
+    .bloc {
+        flex-direction: column;
+    }
+
+    .bloc .year {
+        margin-bottom: 10px;
+    }
+
+    footer .content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .content div {
+        margin: 20px auto;
+        width: 80%;
+    }
+}
+
+@media(min-width: 650px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main aside li {
+        flex-direction: column;
+    }
+
+    .enligne {
+        flex-direction: column;
+    }
+
+    footer .content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .content div {
+        margin: 20px auto;
+        width: 80%;
+    }
+}
+
+@media(min-width: 950px){
+    .container {
+        width: 70%;
+        margin: 50px auto;
+    }
+
+    .enligne {
+        flex-direction: column;
+    }
+
+    footer .content {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .content div {
+        margin: 20px auto;
+        width: 80%;
+        padding: 10px;
+    }
+
+    footer .content div span {
+        display: block;
+    }
+}
